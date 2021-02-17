@@ -22,7 +22,6 @@ if __name__ == '__main__':
     rknn = RKNN(verbose=False)
 
     # Config for Model Input PreProcess
-    rknn.config(channel_mean_value='128 128 128 128#128 128 128 128', reorder_channel='0 1 2#0 1 2')
 
 
     # Load TensorFlow Model
@@ -34,7 +33,7 @@ if __name__ == '__main__':
     
     # Build Model
     print('--> Building model')
-    rknn.build(do_quantization=True, dataset='./dataset.txt')
+    rknn.build(do_quantization=False, dataset='./dataset.txt')
     print('done')
     
     # Export RKNN Model
