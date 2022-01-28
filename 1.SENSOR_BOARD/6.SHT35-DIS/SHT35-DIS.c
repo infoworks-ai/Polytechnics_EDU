@@ -116,9 +116,9 @@ void SHT35_Data_Print(void)
 
 int SHT35_main(void)
 {	
-	if((SHT35_DIS_fd = open("/dev/i2c-2", O_RDWR)) < 0) 
+	if((SHT35_DIS_fd = open("/dev/i2c-3", O_RDWR)) < 0) 
 	{
-		perror("Failed to open i2c-2");
+		perror("Failed to open i2c-3");
 		exit(1);
 	}
 

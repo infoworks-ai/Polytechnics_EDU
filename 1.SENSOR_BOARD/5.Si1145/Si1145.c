@@ -190,9 +190,9 @@ void Si1145_Data_print(void)
 
 int Si1145_main(void)
 {	
-	if((Si1145_fd = open("/dev/i2c-2", O_RDWR)) < 0) 
+	if((Si1145_fd = open("/dev/i2c-3", O_RDWR)) < 0) 
 	{
-		perror("Failed to open i2c-2");
+		perror("Failed to open i2c-3");
 		exit(1);
 	}
 

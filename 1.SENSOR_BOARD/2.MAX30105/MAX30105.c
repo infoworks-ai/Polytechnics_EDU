@@ -293,9 +293,9 @@ void MAX30105_Data_Analisis(void)
 
 int MAX30105_main(void)// /dev/i2c-0 
 {
-	if((MAX30105_fd = open("/dev/i2c-2", O_RDWR)) < 0) 
+	if((MAX30105_fd = open("/dev/i2c-3", O_RDWR)) < 0) 
 	{
-		printf("Failed to open i2c-2");
+		printf("Failed to open i2c-3");
 		exit(1);
 	}
 
